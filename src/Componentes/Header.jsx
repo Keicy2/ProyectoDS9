@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; 
-import '@fortawesome/fontawesome-free/css/all.css';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch, faShoppingCart, faHeart, faUser } from '@fortawesome/free-solid-svg-icons';
 import './css.css';
-import logo from '/Logo.jpeg'; 
+import logo from '/Logo.jpeg';
 
 const Header = () => {
   return (
@@ -14,15 +15,22 @@ const Header = () => {
       <div className="header-center">
         <input type="text" placeholder="Buscar por categoría, producto o marca" className="search-bar" />
         <button className="search-button">
-          <i className="fa fa-search"></i> 
+          <FontAwesomeIcon icon={faSearch} />
         </button>
       </div>
       <div className="header-right">
         <a href="#" className="header-link">Ubicar tienda</a>
         <div className="header-icons">
-        <Link to="/carrito" className="header-icon"><i className="fa fa-shopping-cart"></i> Mis productos</Link>
-          <a href="#" className="header-icon"><i className="fa fa-heart"></i></a>
-          <Link to="/login" className="header-icon"><i className="fa fa-user"></i></Link> 
+          <Link to="/carrito" className="header-icon">
+            <FontAwesomeIcon icon={faShoppingCart} />
+            Mis productos
+          </Link>
+          <a href="#" className="header-icon">
+            <FontAwesomeIcon icon={faHeart} />
+          </a>
+          <Link to="/login" className="header-icon">
+            <FontAwesomeIcon icon={faUser} />
+          </Link>
         </div>
       </div>
     </header>
@@ -30,4 +38,5 @@ const Header = () => {
 }
 
 export default Header;
+
 

@@ -1,14 +1,44 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Estilos de la biblioteca
 import './css.css';
 
 const Banner = () => {
   return (
     <div className="advertisement-banner">
-      <div className="advertisement-content">
-        <h2>¡Oferta especial!</h2>
-        <p>Aprovecha todas nuestras promociones exclusiva por tiempo limitado. ¡No te lo pierdas!</p>
-        <button>Ver más</button>
-      </div>
+      <Carousel
+        showArrows={true}
+        autoPlay={true}
+        infiniteLoop={true}
+        showThumbs={false}
+        showStatus={false}
+        interval={3000}
+      >
+        <div className="advertisement-content">
+          <img src="banner.png" alt="Promoción 1" />
+          <div className="legend">
+            <h2>¡Oferta especial 1!</h2>
+            <p>Aprovecha todas nuestras promociones exclusiva por tiempo limitado. ¡No te lo pierdas!</p>
+            <button>Ver más</button>
+          </div>
+        </div>
+        <div className="advertisement-content">
+          <img src="ruta_a_imagen_2.jpg" alt="Promoción 2" />
+          <div className="legend">
+            <h2>¡Oferta especial 2!</h2>
+            <p>Aprovecha todas nuestras promociones exclusiva por tiempo limitado. ¡No te lo pierdas!</p>
+            <button>Ver más</button>
+          </div>
+        </div>
+        <div className="advertisement-content">
+          <img src="ruta_a_imagen_3.jpg" alt="Promoción 3" />
+          <div className="legend">
+            <h2>¡Oferta especial 3!</h2>
+            <p>Aprovecha todas nuestras promociones exclusiva por tiempo limitado. ¡No te lo pierdas!</p>
+            <button>Ver más</button>
+          </div>
+        </div>
+      </Carousel>
     </div>
   );
 }
