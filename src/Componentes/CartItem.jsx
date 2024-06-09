@@ -1,21 +1,21 @@
 import React from 'react';
 import './css.css';
 
-const CartItem = ({ item }) => {
+const CartItem = ({ item, onUpdateQuantity, onRemove }) => {
   return (
     <div className="cart-item">
       <img src={item.image} alt={item.name} />
-      <div className="item-details">
-        <span className="item-name">{item.name}</span>
-        <span className="item-description">{item.description}</span>
-        <div className="item-quantity">
-          <button>-</button>
+      <div className="cart-item-details">
+        <h4>{item.name}</h4>
+        <p>{item.description}</p>
+        <div className="cart-item-actions">
+          <button onClick={() => onUpdateQuantity(item.id, item.quantity - 1)}>-</button>
           <span>{item.quantity}</span>
-          <button>+</button>
+          <button onClick={() => onUpdateQuantity(item.id, item.quantity + 1)}>+</button>
         </div>
-        <span className="item-price">${item.price}</span>
       </div>
-      <button className="remove-item">×</button>
+      <div className="cart-item-price">${item.price.toFixed(2)}</div>
+      <button onClick={() => onRemove(item.id)} className="cart-item-remove">Eliminar</button>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './Componentes/Header';
 import Navegacion from './Componentes/Navegacion';
@@ -10,12 +10,24 @@ import Registro from './Componentes/Registro';
 import Carousel from './Componentes/Carousel';  
 import Banner from './Componentes/Banner';
 
+
 function App() {
-  const [misProductos, setMisProductos] = React.useState([]);
+  const [misProductos, setMisProductos] = useState([]);
+  const [isCartOpen, setCartOpen] = useState(false);
 
   const agregarAlCarrito = (producto) => {
     setMisProductos([...misProductos, producto]);
-    return <Navigate to="/carrito" />;
+    setCartOpen(true);
+  };
+
+  const updateQuantity = (id, quantity) => {
+    setMisProductos(misProductos.map(item =>
+      item.id === id ? { ...item, quantity: Math.max(1, quantity) } : item
+    ));
+  };
+
+  const removeItem = (id) => {
+    setMisProductos(misProductos.filter(item => item.id !== id));
   };
 
   return (
@@ -29,11 +41,16 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
             <Route path="/catalogo" element={<Catalogo agregarAlCarrito={agregarAlCarrito} />} />
-            <Route path="/carrito" element={<Carrito misProductos={misProductos} />} />
-            {/* Agregar más rutas según sea necesario */}
           </Routes>
         </main>
         <Footer />
+        <Carrito 
+          isOpen={isCartOpen} 
+          onClose={() => setCartOpen(false)} 
+          misProductos={misProductos} 
+          onUpdateQuantity={updateQuantity} 
+          onRemove={removeItem} 
+        />
       </div>
     </Router>
   );
@@ -42,10 +59,9 @@ function App() {
 const Inicio = ({ agregarAlCarrito }) => {
   return (
     <>
-      <h1>Bienvenido</h1>
+      <h1>Bienvenido a nuestra tienda</h1>
       <Banner /> 
       <Carousel /> 
-      {/* Contenido de la página de inicio */}
     </>
   );
 };
