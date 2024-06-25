@@ -1,0 +1,22 @@
+{
+  "name": "proyectods9",
+  "version": "1.0.0",
+  "description": "Api para proyecto de DS9",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keicy2/ProyectoDS9.git"
+  },
+  "author": "Jaime Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keicy2/ProyectoDS9/issues"
+  },
+  "homepage": "https://github.com/Keicy2/ProyectoDS9#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
