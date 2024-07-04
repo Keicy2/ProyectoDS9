@@ -1,0 +1,299 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .text-container {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .text-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .text-container p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .text-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .text-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  /*Preguntas Frecuentes*/
+  .about-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .text-container {
+    flex: 2;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .text-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .text-container p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .text-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .text-container a:hover {
+    text-decoration: underline;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .faq-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .faq-answer {
+    white-space: pre-line;
+    margin-top: 10px;
+    display: none;
+    color: #666;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+
+  /*Pliticas*/
+  .return-policy-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .return-policy-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .return-policy-container h2, .return-policy-container h3 {
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
+  .return-policy-container p,
+  .return-policy-container ul,
+  .return-policy-container ol {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .return-policy-container ul,
+  .return-policy-container ol {
+    margin-left: 20px;
+  }
+  
+  .return-policy-container li {
+    margin-bottom: 10px; /* Añadir margen inferior para separar los elementos */
+  }
+
+  /*Terminos y Condiciones*/
+  /* src/components/TerminosCondiciones.css */
+.terminos-condiciones {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto; /* Añade un margen superior e inferior */
+    background-color: #f9f9f9; /* Fondo claro para diferenciar el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+    font-family: 'Arial', sans-serif; /* Tipografía clara y legible */
+  }
+  
+  .terminos-condiciones h1 {
+    color: #333;
+    font-size: 2em; /* Tamaño de fuente más grande para el título principal */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center; /* Centra el título principal */
+  }
+  
+  .terminos-condiciones h2 {
+    color: #0056b3;
+    font-size: 1.5em; /* Tamaño de fuente para los subtítulos */
+    margin-top: 20px; /* Espacio encima del subtítulo */
+    margin-bottom: 10px; /* Espacio debajo del subtítulo */
+  }
+  
+  .terminos-condiciones p {
+    line-height: 1.8; /* Espaciado entre líneas para mejor lectura */
+    color: #333;
+    margin-bottom: 20px; /* Espacio debajo de cada párrafo */
+  }
+  
+  .terminos-condiciones a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado en el enlace */
+  }
+  
+  .terminos-condiciones a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor sobre el enlace */
+  }
+  
+  .terminos-condiciones ul, .terminos-condiciones ol {
+    margin-left: 20px; /* Indentación para listas */
+    color: #666; /* Color de texto para listas */
+  }
+  
+  .terminos-condiciones li {
+    margin-bottom: 10px; /* Espacio debajo de cada ítem de lista */
+  }
+  
+  .terminos-condiciones strong {
+    color: #333; /* Color para texto en negrita */
+  }
+  /*Politicas de privacidad*/
+  .politica-privacidad {
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto; /* Añade un margen superior e inferior */
+    background-color: #f9f9f9; /* Fondo claro para diferenciar el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+    font-family: 'Arial', sans-serif; /* Tipografía clara y legible */
+  }
+  
+  .politica-privacidad h1 {
+    text-align: center;
+    color:#333; /* Color de título más oscuro para mejor contraste */
+    margin-top: 0; /* Eliminar margen superior predeterminado para el título */
+  }
+  
+  .politica-privacidad h2 {
+    color: #0056b3; /* Color de subtítulo más oscuro */
+  }
+  
+  .politica-privacidad p {
+    color: #333; /* Color de texto principal más oscuro */
+    line-height: 1.8; /* Aumento del espaciado entre líneas para mejor legibilidad */
+  }
+  
+  .politica-privacidad a {
+    color: #007bff; /* Color azul para enlaces */
+    text-decoration: none; 
+  }
+  
+  .politica-privacidad a:hover {
+    text-decoration: underline; 
+  }
+  
