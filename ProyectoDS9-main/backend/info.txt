@@ -1,3 +1,7 @@
+para iniciar el api pueden usar "npm run dev"
+
+para la bd pueden usar mongo atlas y remplazar mi clave, ncreo que la pueden usar tambien, 
+pero si la quieren cambiar pongan su url en moongose.connect(url) y ya
 
 ###login
 con este endpoint se puede loguear un usuario se le pide el email y el password,
