@@ -1,0 +1,129 @@
+
+###login
+con este endpoint se puede loguear un usuario se le pide el email y el password,
+abajo se da un ejemplo (esto da un token de authenticacion en la cookie)
+
+POST http://localhost:1234/auth/login
+Content-Type:application/json
+
+{
+  "email":"1",
+  "password":"1"
+}
+
+
+###logout de usuario
+cuando el usuario quiera salir, tendra que usar este endpoint, para poder eliminar la cookie 
+no necesita ningun paramentro
+
+POST http://localhost:1234/auth/logout
+
+
+###perfil del usuario
+este endpoint nos da el perfil del usuario logueado
+no necesita ningun paramametro
+
+GET http://localhost:1234/auth/profile
+
+
+### update de usuario
+este endpoint se utiliza cuando el usuario quiera hacer un cambio en su informacion
+aun esta en pruebas, pero se necesitan colocar todas las key por ahora, con la info actual y
+modificar que se quiera cambiar 
+
+PATCH http://localhost:1234/auth/update
+Content-Type:application/json
+
+{
+    "name":"3",
+    "email":"3",
+    "password":"3",
+    "address":{
+        "street":"marte",
+        "city":"asd",
+        "state":"NOSE",
+        "zip":"452",
+        "country":"NOSE"
+      },
+    "phone":"777-777-777"
+}
+
+
+###register
+este endpoint es para poder registrar a un usuario, es necesario que llene todos los 
+puntos, abajo un ejemplo de comer poder consumirlo
+
+POST http://localhost:1234/auth/register
+Content-Type:application/json
+
+{
+    "name":"344",
+    "email":"344",
+    "password":"344",
+    "address":{
+        "street":"NOSE",
+        "city":"NOSE",
+        "state":"NOSE",
+        "zip":"452",
+        "country":"NOSE"
+      },
+    "phone":"123-3421-123"
+}
+
+
+//items
+
+###obtener todos los items
+este endpoint es para poder conseguir todos los items de la base de datos,
+no necesita paramentros
+
+GET  http://localhost:1234/items/items
+
+###obtener un item
+este endpoint es para poder obtener la info de un item en especeifico, 
+como parametro se le debe colocar el id del item
+
+                                    se coloca aqui el id 
+                                             ↓ 
+GET http://localhost:1234/items/item/6684e57d7d08d26847b4c927
+
+###crear un item
+este endpoint es para crea un item, abajo se da un ejemplo de como pasar los paramametro necesarios
+
+POST http://localhost:1234/items/createItems
+Content-Type:application/json
+
+{
+  "name": "aasw ",
+  "price": 2.00,
+  "description": "awasa",
+  "category": "vwasa",
+  "stock": 1,
+  "images":["imagen"]
+}
+
+
+###borrar un item
+este necesita el id del item como paramentro
+                                                se coloca aqui el id 
+                                                        ↓ 
+DELETE  http://localhost:1234/items/deleteItems/    id
+
+
+
+###update un item
+este es para actualizar un item, es necesario el id del item y los datos que se quieran actualizar, 
+se puede colocar solo las key de lo que quieras actualizar o todas, a su gusto
+
+                                                se coloca aqui el id 
+                                                        ↓ 
+PATCH http://localhost:1234/items/updateItems/6687b22de578e1c67cae7323
+Content-Type:application/json
+
+{
+    "name": "gato naranja",
+    "stock": 140
+}
+
+
+faltan 2 endpoint mas, 1 los estoy reconstruyendo y el otro lo tengo que terminar
