@@ -17,6 +17,7 @@ import PreguntaF from './Componentes/PregutasF';
 import ReturnPolicy  from './Componentes/ReturnPolicy';
 import Terms from './Componentes/Terms';
 import PoliticaPrivacidad from './Componentes/PoliticaPriv';
+import AdminDashboard from './Componentes/AdminDashboard';
 
 function App() {
   const [misProductos, setMisProductos] = React.useState([]);
@@ -46,6 +47,7 @@ function App() {
             <Route path='/Terms' element={<Terms/>} />
             <Route path='/PoliticaPriv' element={<PoliticaPrivacidad/>} />
             <Route path="/perfil" element={<ProfileDetails />} />
+            <Route path="/admin" element={<AdminDashboard />} />
             {/* Agregar más rutas según sea necesario */}
           </Routes>
         </main>

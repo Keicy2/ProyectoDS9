@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faShoppingCart, faUser, faUserLock } from '@fortawesome/free-solid-svg-icons';
 import './css.css';
 import logo from '/logonew.svg';
 
@@ -29,6 +29,9 @@ const Header = () => {
           </Link>
           <Link to="/login" className="header-icon">
             <FontAwesomeIcon icon={faUser} />
+          </Link>
+          <Link to="/admin" className="header-icon">
+            <FontAwesomeIcon icon={faUserLock} />
           </Link>
         </div>
       </div>

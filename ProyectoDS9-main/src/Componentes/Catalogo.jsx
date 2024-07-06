@@ -38,7 +38,6 @@ const Catalogo = ({children}) => {
       <div className="catalogo-container">
         
       <div className='catalogo-filters'>
-      <Filters />
       </div>
       <div className='products-pagination-container'>
       <ProductList products={currentProducts} addToCart={addToCart}/>
