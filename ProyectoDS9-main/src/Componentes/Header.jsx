@@ -11,6 +11,7 @@ const Header = () => {
       <div className="header-start">
         <Link to="/">
           <img src={logo} alt="Logo" className="header-logo" />
+          <span className="company-name">STUDY SUPPLY</span>
         </Link>
       </div>
       <div className="header-center">
