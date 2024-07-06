@@ -9,6 +9,7 @@ import Carrito from './Componentes/Carrito';
 import Registro from './Componentes/Registro';
 import Carousel from './Componentes/Carousel';  
 import Banner from './Componentes/Banner';
+import BannerOferta from './Componentes/BannerOferta';
 import ProvedorCartContext from './Contextos/ProvedorCartContext';
 import ProfileDetails from './Componentes/ProfileDetails';
 import About from './Componentes/About';
@@ -62,7 +63,9 @@ const Inicio = ({ agregarAlCarrito }) => {
       <Banner /> 
       <Carousel /> 
       {/* Contenido de la página de inicio */}
-     
+      <br/>
+      <BannerOferta /> 
+      <br/>
     </>
   );
 };
