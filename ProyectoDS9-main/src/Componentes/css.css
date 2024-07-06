@@ -219,34 +219,71 @@ main{
     bottom: 0px; 
 }
 
-
-  /*Navegacion*/
 .barra {
   background-color: #007bff; /* Cambia a tu color deseado */
   color: white;
   padding: 1em;
   text-align: center;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #8BBEC8;
-  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8BBEC8;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #007bff;
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+}
+
+.menu ul li {
+  display: block;
+  padding: 10px;
+}
+
+.menu ul li a {
+  display: block;
+}
+
+.submenu-container:hover > .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #007bff;
+  width: 200px;
+}
 
   /*FOOTER*/
 

@@ -34,7 +34,7 @@ const Catalogo = ({children}) => {
 
   return (
     <div>
-     <h2 className="catalogo-title">Catálogo de Productos</h2>
+     <h2 className="catalogo-title">Productos</h2>
       <div className="catalogo-container">
         
       <div className='catalogo-filters'>
