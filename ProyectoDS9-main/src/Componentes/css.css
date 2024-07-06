@@ -98,7 +98,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #0A3448;
+    background-color: #0a3448;
     padding: 10px 20px;
   }
   
@@ -107,8 +107,8 @@ main{
     align-items: center;
   }
   
-  .header-left img {
-    height: 40px;
+  .header-start img {
+    height: 130px;
     margin-right: 10px;
   }
   

@@ -7,7 +7,8 @@ function Navegacion() {
     <nav className='barra'>
       <ul>
         <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/catalogo">Catálogo</Link></li>
+        <li><Link to="/catalogo">Productos</Link></li>
+        <li><a href='public/CATALOGO.pdf'>Catálogo</a></li>
       </ul>
     </nav>
   );

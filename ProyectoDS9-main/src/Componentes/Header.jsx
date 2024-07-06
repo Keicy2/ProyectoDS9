@@ -3,16 +3,15 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
 import './css.css';
-import logo from '/Logo.jpeg';
+import logo from '/logonew.svg';
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="header-left">
+      <div className="header-start">
         <Link to="/">
           <img src={logo} alt="Logo" className="header-logo" />
         </Link>
-        <span className="company-name">STUDY SUPPLY</span>
       </div>
       <div className="header-center">
         <input type="text" placeholder="Buscar por categoría, producto o marca" className="search-bar" />

@@ -15,7 +15,7 @@ const Banner = () => {
         interval={3000}
       >
         <div className="advertisement-content">
-          <img src="banner2.jpg" alt="Promoción 1" />
+          <img src="banner1.png" alt="Promoción 1" />
           <div className="legend">
             <h2>¡Oferta especial 1!</h2>
             <p>Aprovecha todas nuestras promociones exclusiva por tiempo limitado. ¡No te lo pierdas!</p>
@@ -23,7 +23,7 @@ const Banner = () => {
           </div>
         </div>
         <div className="advertisement-content">
-          <img src="banner.png" alt="Promoción 2" />
+          <img src="banner2.png" alt="Promoción 2" />
           <div className="legend">
             <h2>¡Oferta especial 2!</h2>
             <p>Aprovecha todas nuestras promociones exclusiva por tiempo limitado. ¡No te lo pierdas!</p>
