@@ -94,7 +94,7 @@ main{
   
   /*Header*/
 .header {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'frauces';;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,7 +108,7 @@ main{
   }
   
   .header-start img {
-    height: 130px;
+    height: 100px;
     margin-right: 10px;
   }
   
@@ -220,7 +220,7 @@ main{
 }
 
 .barra {
-  background-color: #007bff; /* Cambia a tu color deseado */
+  background-color: #0a3448; /* Cambia a tu color deseado */
   color: white;
   padding: 1em;
   text-align: center;
@@ -365,11 +365,13 @@ a:hover {
 
   /* Banner*/
   .advertisement-banner {
-    height: calc(80vh - 30px); /* Reducir la altura total */
-    margin: 100px; /* Añadir márgenes superior/inferior */
+    height: 100%; 
+    width: 100%; 
+    margin: 0px; 
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Asegurar que el contenido no se desborde */
 }
 
 .advertisement-content {
@@ -381,43 +383,8 @@ a:hover {
 .advertisement-content img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Asegurar que la imagen cubra todo el espacio sin deformarse */
 }
-
-.legend {
-    position: absolute;
-    bottom: 10%; /* Ajustar la posición vertical de la leyenda */
-    left: 5%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.legend h2 {
-    margin: 0;
-    font-size: 2rem; /* Reducir el tamaño del título */
-}
-
-.legend p {
-    margin: 10px 0;
-    font-size: 1rem; /* Reducir el tamaño del texto */
-}
-
-.legend button {
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.legend button:hover {
-    background-color: #e73370;
-}
-
 
   
 /* página de registro */
@@ -570,7 +537,9 @@ a:hover {
 }
 
 .navbar {
+  width: 100%;
     display: flex;
+    position: relative;
     justify-content: center;
     background-color: #0A3448;
     padding: 10px;

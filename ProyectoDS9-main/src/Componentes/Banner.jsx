@@ -16,27 +16,13 @@ const Banner = () => {
       >
         <div className="advertisement-content">
           <img src="banner1.png" alt="Promoción 1" />
-          <div className="legend">
-            <h2>¡Oferta especial 1!</h2>
-            <p>Aprovecha todas nuestras promociones exclusiva por tiempo limitado. ¡No te lo pierdas!</p>
-            <button>Ver más</button>
-          </div>
+          
         </div>
         <div className="advertisement-content">
           <img src="banner2.png" alt="Promoción 2" />
-          <div className="legend">
-            <h2>¡Oferta especial 2!</h2>
-            <p>Aprovecha todas nuestras promociones exclusiva por tiempo limitado. ¡No te lo pierdas!</p>
-            <button>Ver más</button>
-          </div>
         </div>
         <div className="advertisement-content">
           <img src="banner.png" alt="Promoción 3" />
-          <div className="legend">
-            <h2>¡Oferta especial 3!</h2>
-            <p>Aprovecha todas nuestras promociones exclusiva por tiempo limitado. ¡No te lo pierdas!</p>
-            <button>Ver más</button>
-          </div>
         </div>
       </Carousel>
     </div>
