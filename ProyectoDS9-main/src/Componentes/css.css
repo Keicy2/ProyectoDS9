@@ -1,6 +1,5 @@
 /* css.css */
 main{
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -219,6 +218,11 @@ main{
     bottom: 0px; 
 }
 
+.titulocarrusel{
+  text-align: center;
+  font-family: 'faunces';
+}
+
 .barra {
   background-color: #0a3448; /* Cambia a tu color deseado */
   color: white;
@@ -379,13 +383,14 @@ a:hover {
 }
 
 .advertisement-content {
-    position: relative; /* Asegurar que el contenido tenga un contenedor posicionado */
-    height: 100%;
-    width: 100%;
+  max-height: 100% ;
+  height: 100%;
+  object-fit: cover;
+    
 }
 
 .advertisement-content img {
-    width: 100%;
+    width: 65rem;
     height: 100%;
     object-fit: cover; /* Asegurar que la imagen cubra todo el espacio sin deformarse */
 }

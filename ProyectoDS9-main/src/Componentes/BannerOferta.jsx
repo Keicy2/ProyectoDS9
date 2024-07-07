@@ -3,8 +3,8 @@ import './css.css';
 
 const BannerOferta = () => {
     return (
-      <div className="advertisement-banner">
-        <div className="advertisement-content">
+      <div className="promo1">
+        <div className="promo">
           <img src="bannerprom2.png" alt="Promoción" />
         </div>
       </div>
