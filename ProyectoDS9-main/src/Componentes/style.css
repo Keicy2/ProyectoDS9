@@ -132,15 +132,17 @@
   }
   
   .faq-container {
+    font-family: 'frauces';
     padding: 20px;
     max-width: 800px;
-    margin: auto;
+    margin: 10px auto;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .faq-container h1 {
+    font-size: 50px;
     text-align: center;
     color: #333;
     margin-bottom: 20px;
@@ -157,11 +159,13 @@
   }
   
   .faq-question {
+    font-size: 20px;
     font-weight: bold;
-    color: #007bff;
+    color: #4f8090;
   }
   
   .faq-answer {
+    font-size: 20px;
     white-space: pre-line;
     margin-top: 10px;
     display: none;
@@ -176,27 +180,31 @@
   .return-policy-container {
     padding: 20px;
     max-width: 800px;
-    margin: auto;
+    margin: 10px auto;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .return-policy-container h1 {
+    font-family: 'frauces';
     text-align: center;
     color: #333;
     margin-bottom: 20px;
   }
   
   .return-policy-container h2, .return-policy-container h3 {
-    color: #007bff;
+    font-family: 'frauces';
+    color: #4f8090;
     margin-top: 20px;
   }
   
   .return-policy-container p,
   .return-policy-container ul,
   .return-policy-container ol {
-    color: #666;
+    font-family: 'frauces';
+    font-size: 20px;
+    color: #333;
     line-height: 1.6;
   }
   
@@ -210,32 +218,32 @@
   }
 
   /*Terminos y Condiciones*/
-  /* src/components/TerminosCondiciones.css */
 .terminos-condiciones {
     padding: 20px;
     max-width: 800px;
-    margin: 40px auto; /* Añade un margen superior e inferior */
-    background-color: #f9f9f9; /* Fondo claro para diferenciar el contenido */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
-    font-family: 'Arial', sans-serif; /* Tipografía clara y legible */
+    margin: 15px auto;
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    font-family: 'frauces';
   }
   
   .terminos-condiciones h1 {
     color: #333;
-    font-size: 2em; /* Tamaño de fuente más grande para el título principal */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 3em;
+    margin-bottom: 20px; 
     text-align: center; /* Centra el título principal */
   }
   
   .terminos-condiciones h2 {
-    color: #0056b3;
-    font-size: 1.5em; /* Tamaño de fuente para los subtítulos */
-    margin-top: 20px; /* Espacio encima del subtítulo */
-    margin-bottom: 10px; /* Espacio debajo del subtítulo */
+    color: #4f8090;
+    font-size: 2em; 
+    margin-top: 20px; 
+    margin-bottom: 1px;
   }
   
   .terminos-condiciones p {
+    font-size: 1.2em;
     line-height: 1.8; /* Espaciado entre líneas para mejor lectura */
     color: #333;
     margin-bottom: 20px; /* Espacio debajo de cada párrafo */
@@ -243,9 +251,9 @@
   
   .terminos-condiciones a {
     color: #007bff; /* Color del enlace */
-    text-decoration: none; /* Sin subrayado en el enlace */
+    text-decoration: none; 
   }
-  
+
   .terminos-condiciones a:hover {
     text-decoration: underline; /* Subrayado al pasar el cursor sobre el enlace */
   }
@@ -256,45 +264,89 @@
   }
   
   .terminos-condiciones li {
-    margin-bottom: 10px; /* Espacio debajo de cada ítem de lista */
+    margin-bottom: 10px; 
   }
   
   .terminos-condiciones strong {
-    color: #333; /* Color para texto en negrita */
+    color: #333; 
   }
+
   /*Politicas de privacidad*/
   .politica-privacidad {
     padding: 20px;
     max-width: 800px;
-    margin: 40px auto; /* Añade un margen superior e inferior */
+    margin: 15px auto; 
     background-color: #f9f9f9; /* Fondo claro para diferenciar el contenido */
     border-radius: 8px; /* Bordes redondeados */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
-    font-family: 'Arial', sans-serif; /* Tipografía clara y legible */
+    font-family: 'frauces'; /* Tipografía clara y legible */
   }
   
   .politica-privacidad h1 {
+    font-size: 3em;
     text-align: center;
-    color:#333; /* Color de título más oscuro para mejor contraste */
-    margin-top: 0; /* Eliminar margen superior predeterminado para el título */
+    color:#333; 
+    margin-top: 0; 
   }
   
   .politica-privacidad h2 {
-    color: #0056b3; /* Color de subtítulo más oscuro */
+    color: #4f8090; /* Color de subtítulo más oscuro */
   }
   
   .politica-privacidad p {
+    font-size: 1.5em;
     color: #333; /* Color de texto principal más oscuro */
     line-height: 1.8; /* Aumento del espaciado entre líneas para mejor legibilidad */
   }
   
   .politica-privacidad a {
-    color: #007bff; /* Color azul para enlaces */
+    color: #0A3448; /* Color azul para enlaces */
     text-decoration: none; 
   }
   
   .politica-privacidad a:hover {
     text-decoration: underline; 
+  }
+  
+  /*PASSWORD*/
+  .login-form, .forgot-password-form, .register-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 10px;
+  }
+  
+  .register-message {
+    display: block;
+    margin-top: 15px;
+  }
+  
+  .forgot-password-link {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgot-password-link:hover {
+    text-decoration: underline;
   }
   
 

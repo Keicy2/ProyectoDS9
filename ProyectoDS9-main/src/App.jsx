@@ -20,7 +20,7 @@ import ReturnPolicy from './Componentes/ReturnPolicy';
 import Terms from './Componentes/Terms';
 import PoliticaPrivacidad from './Componentes/PoliticaPriv';
 import AdminDashboard from './Componentes/AdminDashboard';
-import Ofertas from './Componentes/Ofertas';
+
 
 function App() {
   const [misProductos, setMisProductos] = React.useState([]);
@@ -40,6 +40,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Inicio agregarAlCarrito={agregarAlCarrito} />} />
               <Route path="/login" element={<Login />} />
+
               <Route path="/registro" element={<Registro />} />
               <Route path="/catalogo" element={<Catalogo agregarAlCarrito={agregarAlCarrito} />} />
               <Route path="/carrito" element={<Carrito misProductos={misProductos} />} />

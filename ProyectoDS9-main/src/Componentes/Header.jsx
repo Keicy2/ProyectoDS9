@@ -21,7 +21,6 @@ const Header = () => {
         </button>
       </div>
       <div className="header-right">
-        <a href="#" className="header-link">Ubicar tienda</a>
         <div className="header-icons">
           <Link to="/carrito" className="header-icon">
             <FontAwesomeIcon icon={faShoppingCart} />
@@ -29,6 +28,7 @@ const Header = () => {
           </Link>
           <Link to="/login" className="header-icon">
             <FontAwesomeIcon icon={faUser} />
+             Mi Cuenta
           </Link>
           <Link to="/admin" className="header-icon">
             <FontAwesomeIcon icon={faUserLock} />

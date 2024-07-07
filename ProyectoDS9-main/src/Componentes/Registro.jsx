@@ -41,7 +41,7 @@ function Registro() {
 
   return (
     <div className="register-container">
-      <h2>Registro</h2>
+      <h2>Crear Cuenta</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Nombre:</label>

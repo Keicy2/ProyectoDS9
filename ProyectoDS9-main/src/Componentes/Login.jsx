@@ -1,4 +1,3 @@
-// LoginForm.js
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
@@ -46,7 +45,7 @@ const LoginForm = () => {
 
   return (
     <div className="login-form">
-      <h2>Login</h2>
+      <h2>Iniciar Sesión</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="email">Correo Electrónico:</label>
@@ -70,8 +69,11 @@ const LoginForm = () => {
             required
           />
         </div>
+        <Link to="/ForgotPassword" className="forgot-password-link">
+          ¿Olvidaste tu contraseña?
+        </Link>
         {error && <p className="error-message">{error}</p>}
-        <button type="submit">Login</button>
+        <button type="submit">Iniciar Sesión </button>
         <span className="register-message">¿No estás registrado? <Link to="/registro">Regístrate</Link></span>
       </form>
     </div>
