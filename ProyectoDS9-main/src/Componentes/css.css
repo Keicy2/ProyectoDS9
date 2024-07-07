@@ -298,10 +298,10 @@ a:hover {
 .footer {
     background-color: #0A3448;
     color: #fff;
-    padding-top: 10px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
     font-family: Arial, sans-serif;
   }
 
@@ -363,11 +363,14 @@ a:hover {
   }
   
   .footer-bottom {
+    width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     background-color: #052535;
     border-top: 0px solid #4f8090;
-    margin-top: 20px;
+    margin-top: 10px;
+    bottom: 0;
+    left: 0;
   }
   
 
