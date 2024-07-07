@@ -3,12 +3,16 @@ import './css.css';
 
 const BannerOferta = () => {
     return (
-      <div className="promo1">
-        <div className="promo">
+      <div className="advertisement-content2">
+        <div className="advertisement-banner2">
           <img src="bannerprom2.png" alt="Promoción" />
+        </div>
+
+        <div className="advertisement-banner2">
+          <img src="bannerprom1.png" alt="Promoción" />
         </div>
       </div>
     );
-  };
-  
-  export default BannerOferta;
+};
+
+export default BannerOferta;

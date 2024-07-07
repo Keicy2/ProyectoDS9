@@ -50,26 +50,27 @@ const Carrusel = () => {
     }*/
     return (
         <div style={{ padding: '40px' }}>
-            <h2>Explora y elige, todo a un solo clic</h2>
+            <h2 className='titulocarrusel'>Explora y elige, todo a un solo clic</h2>
+            <br />
             <Slider {...settings}>
                 <div className="carousel-item">
-                    <img src="Cuaderno.png" alt="Cuaderno" />
-                    <h3>Cuaderno</h3>
+                    <img src="\utiles\Goma en Barra Rosado Pastel 10g 0.60.png" alt="Goma rosa" />
+                    <h3>Goma en barra</h3>
                     <button>Clic Aquí</button>
                 </div>
                 <div className="carousel-item">
-                    <img src="Boligrafo.jpeg" alt="Bolígrafo" />
-                    <h3>Bolígrafo</h3>
+                    <img src="\utiles\Lápices de Colores Caja 24 Piezas  4.95.png" alt="lapiz de color" />
+                    <h3>Lápices de colores</h3>
                     <button>Clic Aquí</button>
                 </div>
                 <div className="carousel-item">
-                    <img src="Libreta.jpeg" alt="Libreta" />
-                    <h3>Libreta</h3>
+                    <img src="\utiles\Libreta Acrylic Pad 10 Hojas 9 x12 5.95.png" alt="Libreta" />
+                    <h3>Libreta Acrylic</h3>
                     <button>Clic Aquí</button>
                 </div>
                 <div className="carousel-item">
-                    <img src="Resaltador.jpeg" alt="Resaltadores" />
-                    <h3>Resaltadores</h3>
+                    <img src="\utiles\Piensa Ciencias Naturales 6 23.00.png" alt="libro" />
+                    <h3>Piensa Ciensas Naturales 6</h3>
                     <button>Clic Aquí</button>
                 </div>
             </Slider>
