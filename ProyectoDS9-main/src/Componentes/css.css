@@ -257,6 +257,28 @@ a:hover {
 
 
 
+.advertisement-content3 {
+  text-align: center;
+  padding: 20px;
+}
+
+.advertisement-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.advertisement-banner3 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.advertisement-banner3 img {
+  max-width: 200px; /* Ajusta este valor según el tamaño deseado de las imágenes */
+  height: auto;
+}
+
+
 /*Navegacion*/
 .navbar { 
   padding-left: 37% !important;
@@ -292,7 +314,7 @@ a:hover {
   .footer {
     background-color: #0A3448;
     color: #fff;
-    padding-top: 0px;
+    padding-top: 20px;
     padding-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;

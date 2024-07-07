@@ -7,14 +7,16 @@ import Footer from './Componentes/Footer';
 import Login from './Componentes/Login';
 import Carrito from './Componentes/Carrito';
 import Registro from './Componentes/Registro';
-import Carousel from './Componentes/Carousel';  
+import Carousel from './Componentes/Carousel';   
 import Banner from './Componentes/Banner';
+import Carousel2 from './Componentes/Carousel2'; 
 import BannerOferta from './Componentes/BannerOferta';
+import Colegios from './Componentes/Colegios';
 import ProvedorCartContext from './Contextos/ProvedorCartContext';
 import ProfileDetails from './Componentes/ProfileDetails';
 import About from './Componentes/About';
 import PreguntaF from './Componentes/PregutasF';
-import ReturnPolicy  from './Componentes/ReturnPolicy';
+import ReturnPolicy from './Componentes/ReturnPolicy';
 import Terms from './Componentes/Terms';
 import PoliticaPrivacidad from './Componentes/PoliticaPriv';
 import AdminDashboard from './Componentes/AdminDashboard';
@@ -30,31 +32,30 @@ function App() {
 
   return (
     <ProvedorCartContext>
-    <Router>
-      <div>
-        <Header />
-        <Navegacion />
-        <main>
-          <Routes>
-            <Route path="/" element={<Inicio />} />
-            <Route path="/" element={<Inicio agregarAlCarrito={agregarAlCarrito} />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/registro" element={<Registro />} />
-            <Route path="/catalogo" element={<Catalogo agregarAlCarrito={agregarAlCarrito} />} />
-            <Route path="/carrito" element={<Carrito misProductos={misProductos} />} />
-            <Route path="/About" element={<About />} /> 
-            <Route path='/PreguntaF' element={<PreguntaF/>} />
-            <Route path='/ReturnPolicy' element={<ReturnPolicy/>} />
-            <Route path='/Terms' element={<Terms/>} />
-            <Route path='/PoliticaPriv' element={<PoliticaPrivacidad/>} />
-            <Route path="/perfil" element={<ProfileDetails />} />
-            <Route path="/admin" element={<AdminDashboard />} />
-            {/* Agregar más rutas según sea necesario */}
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+      <Router>
+        <div>
+          <Header />
+          <Navegacion />
+          <main>
+            <Routes>
+              <Route path="/" element={<Inicio agregarAlCarrito={agregarAlCarrito} />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/registro" element={<Registro />} />
+              <Route path="/catalogo" element={<Catalogo agregarAlCarrito={agregarAlCarrito} />} />
+              <Route path="/carrito" element={<Carrito misProductos={misProductos} />} />
+              <Route path="/About" element={<About />} />
+              <Route path='/PreguntaF' element={<PreguntaF />} />
+              <Route path='/ReturnPolicy' element={<ReturnPolicy />} />
+              <Route path='/Terms' element={<Terms />} />
+              <Route path='/PoliticaPriv' element={<PoliticaPrivacidad />} />
+              <Route path="/perfil" element={<ProfileDetails />} />
+              <Route path="/admin" element={<AdminDashboard />} />
+              {/* Agregar más rutas según sea necesario */}
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
     </ProvedorCartContext>
   );
 }
@@ -64,15 +65,16 @@ const Inicio = ({ agregarAlCarrito }) => {
     <>
       <br/>
       <Banner /> 
+      <br />
       <Carousel /> 
-      {/* Contenido de la página de inicio */}
       <br/>
       <BannerOferta /> 
       <br/>
-      <Carousel /> 
+      <Carousel2 /> 
       <br/>
-      <Ofertas /> 
-      
+      <hr />
+      <Colegios/> 
+      <br />
     </>
   );
 };
