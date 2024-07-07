@@ -18,6 +18,7 @@ import ReturnPolicy  from './Componentes/ReturnPolicy';
 import Terms from './Componentes/Terms';
 import PoliticaPrivacidad from './Componentes/PoliticaPriv';
 import AdminDashboard from './Componentes/AdminDashboard';
+import Ofertas from './Componentes/Ofertas';
 
 function App() {
   const [misProductos, setMisProductos] = React.useState([]);
@@ -68,6 +69,10 @@ const Inicio = ({ agregarAlCarrito }) => {
       <br/>
       <BannerOferta /> 
       <br/>
+      <Carousel /> 
+      <br/>
+      <Ofertas /> 
+      
     </>
   );
 };
