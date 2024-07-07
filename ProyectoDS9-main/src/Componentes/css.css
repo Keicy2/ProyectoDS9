@@ -188,9 +188,10 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px; 
+    padding: 15px;
     position: relative;
     transition: transform 0.2s ease-in-out;
+    overflow: hidden; /* Evita que los elementos se salgan del contenedor */
 }
 
 .slick-slide:hover {
@@ -205,6 +206,13 @@ main{
 .slick-slide h3 {
     margin: 10px 0;
     text-align: left;
+    font-size: 18px;
+}
+
+.slick-slide h4 {
+  margin: 10px 0;
+  text-align: left;
+  font-size: 16px;
 }
 
 .slick-slide button {
@@ -215,13 +223,15 @@ main{
     cursor: pointer;
     border-radius: 5px;
     position: relative;
-    bottom: 0px; 
+    bottom: 0px;
 }
 
-.titulocarrusel{
-  text-align: center;
-  font-family: 'faunces';
+.titulocarrusel {
+    text-align: center;
+    font-family: 'faunces';
+    font-size: 25px;
 }
+
 
 .barra {
   background-color: #0a3448; /* Cambia a tu color deseado */
@@ -244,6 +254,8 @@ a {
 a:hover {
   color: #8BBEC8;
 }
+
+
 
 /*Navegacion*/
 .navbar { 
