@@ -295,7 +295,7 @@ a:hover {
 
   /*FOOTER*/
 
-.footer {
+  .footer {
     background-color: #0A3448;
     color: #fff;
     padding-top: 0px;
@@ -349,20 +349,17 @@ a:hover {
     text-decoration: underline;
   }
   
-  /* Iconos*/
-  .footer-section .social-icons a {
-    color: #fff;
-    font-size: 20px;
-    margin-right: 15px;
-    text-decoration: none;
-    transition: color 0.3s ease;
+
+  .tituloss {
+    font-family: 'faunces';
+    font-size: 25px;
   }
-  
-  .footer-section .social-icons a:hover {
-    color: #4f8090;
+
+  .slogan {
+    font-family: 'faunces'; 
   }
-  
-  .footer-bottom {
+
+  .derechos{
     width: 100%;
     text-align: center;
     padding: 15px;
@@ -372,8 +369,22 @@ a:hover {
     bottom: 0;
     left: 0;
   }
-  
 
+  .tituloss {
+    font-family: 'faunces';
+    font-size: 25px;
+  }
+
+  .slogan {
+    font-family: 'faunces'; 
+  }
+
+  .derechos{
+    text-align: center;
+    font-size: 16px;
+  }
+
+  
   /* Banner*/
   .advertisement-banner {
     height: 100%; 
@@ -396,6 +407,31 @@ a:hover {
     width: 65rem;
     height: 100%;
     object-fit: cover; /* Asegurar que la imagen cubra todo el espacio sin deformarse */
+}
+
+
+.advertisement-banner2 {
+  height: 100%; 
+  width: 100%; 
+  margin: 0px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+.advertisement-content2 {
+  max-height: 100%;
+  height: 100%;
+  object-fit: contain; 
+  display: flex; 
+  gap: 10px; 
+}
+
+.advertisement-content2 img {
+  width: 50vw; 
+  height: auto; 
+  object-fit: contain; 
 }
 
   

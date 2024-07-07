@@ -9,8 +9,8 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-          <h4>STUDY SUPPLY</h4>
-          <p>¡SIN FILAS, NI DEMORAS!.</p>
+          <h3 className='tituloss'>STUDY SUPPLY</h3>
+          <p className='slogan'>¡SIN FILAS, NI DEMORAS!.</p>
         </div>
         <div className="footer-section">
           <h4>Enlaces útiles</h4>
@@ -40,8 +40,9 @@ function Footer() {
           </div>
         </div>
       </div>
+      <br />
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} STUDY SUPPLY - Todos los derechos reservados</p>
+        <p className='derechos'>© {new Date().getFullYear()} STUDY SUPPLY - Todos los derechos reservados</p>
       </div>
     </footer>
   );
