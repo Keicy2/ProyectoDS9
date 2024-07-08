@@ -26,9 +26,9 @@
   
   /*formulario de inicio de sesión */
   .login-form {
+    margin: 10px;
     font-family: 'frauces';
     max-width: 400px;
-    margin: 10px auto;
     padding: 20px 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -501,60 +501,6 @@
     background-color: #4f8090;
   }
   
-.catalogo-title {
-    color: #333; 
-    font-size: 2em;
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  .producto:hover {
-    transform: scale(1.05); 
-  }
-  
-  .producto img {
-    max-width: 100%;
-    height: auto; 
-    margin-bottom: 10px;
-  }
-  
-  .producto-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .sku, .product-name, .price {
-    display: block;
-    margin: 5px 0;
-    font-size: 1em;
-    color: #333; 
-  }
-  
- 
-  
-  .price {
-    color: #0A3448; 
-    font-size: 1.2em;
-  }
-  
-  .add-to-cart {
-    background-color: #0A3448; 
-    color: #fff; 
-    border: none; 
-    border-radius: 4px;
-    padding: 10px 20px; 
-    cursor: pointer; 
-    margin-top: 10px; 
-    transition: background-color 0.3s;
-  }
-  
-  .add-to-cart:hover {
-    background-color: #4f8090; 
-  }
-  
-  
-
   /* Estilos para el componente Carrito */
 .carrito-container {
     max-width: 600px;
@@ -594,53 +540,41 @@
 
 
  /*PRODUCTOS*/
- body {
-    font-family: 'faunces';
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
+
+ .catalogo-title {
+  font-family: 'Fraunce';
+  color: #333; 
+  font-size: 4em;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .catalogo-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    display:inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    align-items: center;
+    gap: 25px;
+    padding: 50px;
 }
-
-.catalogo-filters{
-  flex-direction: column;
-}
-
-.filters h2{
-  text-align: center;
-}
-
 
 .product-container {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 8fr);
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
 .producto {
-    flex: 1 1 calc(25% - 40px);
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    transition: box-shadow 0.3s;
+  flex: 1 1 calc(25% - 40px);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: box-shadow 0.3s;
 }
 
 .producto:hover {
@@ -648,15 +582,18 @@
 }
 
 .producto img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .producto-info {
-    margin-top: 10px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .sku {
     display: block;
@@ -665,22 +602,29 @@
 }
 
 .product-name {
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #333;
+  display: block;
+  font-family: 'Fraunce';
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-description{
+  font-weight: bold;
+  font-size: 12px;
 }
 
 .price {
-    display: block;
+   
     font-size: 18px;
     font-weight: bold;
     color: #000;
     margin-bottom: 15px;
 }
 
-.add-to-cart {
+.add-to-cart-button {
     padding: 10px 20px;
     background-color: #0A3448;
     color: #fff;
@@ -695,6 +639,7 @@
     background-color: #06334f;
 }
 
+/**/
 .cart-container {
     display: flex;
     justify-content: space-between;

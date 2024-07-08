@@ -41,7 +41,7 @@ const Productos = ({children}) => {
         
       <div className='catalogo-filters'>
       </div>
-      <div className='products-pagination-container'>
+      <div className='producto-info'>
       <ProductList products={currentProducts} addToCart={addToCart}/>
         <Pagination
           productsPerPage={productsPerPage}

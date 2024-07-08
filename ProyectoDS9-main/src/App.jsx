@@ -24,6 +24,7 @@ import PoliticaPrivacidad from './Componentes/PoliticaPriv';
 import AdminDashboard from './Componentes/AdminDashboard';
 import Ofertas from './Componentes/Ofertas';
 import Navegacion2 from './Componentes/Navegacion2';
+import Navegacion from './Componentes/Navegacion';
 
 function App() {
   const [misProductos, setMisProductos] = React.useState([]);
@@ -38,6 +39,7 @@ function App() {
     <Router>
       <div>
         <Header />
+
         <main>
           <Routes>
             <Route path="/" element={<Inicio />} />
