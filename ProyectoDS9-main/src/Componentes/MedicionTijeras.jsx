@@ -2,7 +2,6 @@ import React, {useState, useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Pagination from './Pagination';
 import ProductList from './ProductList';
-import Filters from './Filters';
 import './css.css';
 import { cartcontex } from '../Contextos/cartcontext';
 import Navegacion from './Navegacion';
@@ -22,7 +21,7 @@ const MedicionTijeras = ({children}) => {
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 8;
+  const productsPerPage = 10;
 
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
