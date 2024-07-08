@@ -48,8 +48,12 @@ const navBarData = [
                 ]
             },
             { 
-                label: "Medición y tijeras", 
-                url: "/", 
+                label: "Arte", 
+                url: "/Arte", 
+            },
+            { 
+                label: "Medición y Tijeras", 
+                url: "/MedicionTijeras", 
             },
             { 
               label: "Manualidades", 

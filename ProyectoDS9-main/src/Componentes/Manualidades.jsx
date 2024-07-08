@@ -23,7 +23,7 @@ const Manualidades = ({children}) => {
     { id: 911, name: 'GOMA BLANCA', description: 'Contenido 225ml', price: 2.25, image: 'utiles/Goma Blanca 225ml 2.25.png' },
     { id: 101, name: 'DISCO DE FOAM', description: '30x2.5cm Blanco', price: 2.99, image: 'utiles/Disco de Foam 30x2.5cm Blanco 2.99.png' },
     { id: 111, name: 'NOTAS ADHESIVAS', description: 'Forma de Flechas 5 Colores', price: 0.99, image: 'utiles/Notas Adhesivas Flechas 5 Colores 0.99.png' },
-    { id: 121, name: 'DPAPEL DE CONSTRUCCIÓN CARYOLA', description: '48 piezas', price: 5.99, image: 'utiles/Papel de Construcción Crayola 48 Piezas 5.99.png' },
+    { id: 121, name: 'PAPEL DE CONSTRUCCIÓN CARYOLA', description: '48 piezas', price: 5.99, image: 'utiles/Papel de Construcción Crayola 48 Piezas 5.99.png' },
     // Agrega otros productos según sea necesario
   ];
 
