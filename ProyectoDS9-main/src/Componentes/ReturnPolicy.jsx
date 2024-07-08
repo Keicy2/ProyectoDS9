@@ -10,7 +10,7 @@ const ReturnPolicy = () => {
       </p>
       <h2>Aspectos Destacados de Nuestra Política de Devoluciones:</h2>
       <h3>Plazo de Devolución</h3>
-      <p>Aceptamos devoluciones dentro de los 15 días posteriores a la compra.</p>
+      <p>Aceptamos devoluciones dentro de los 3 días posteriores a la compra.</p>
       <h3>Productos Elegibles para Devolución</h3>
       <p>
         Todos los productos sin usar y en su embalaje original pueden ser devueltos. 
@@ -38,7 +38,7 @@ const ReturnPolicy = () => {
       <ul>
         <li>No se aceptan devoluciones de productos usados o dañados.</li>
         <li>No se aceptan devoluciones de productos personalizados o especiales.</li>
-        <li>No se aceptan devoluciones de productos después del plazo de devolución de 15 días.</li>
+        <li>No se aceptan devoluciones de productos después del plazo de devolución de 3 días.</li>
       </ul>
       <h3>Contacta con Nosotros</h3>
       <p>

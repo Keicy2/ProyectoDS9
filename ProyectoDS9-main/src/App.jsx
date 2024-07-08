@@ -6,6 +6,8 @@ import Manualidades from './Componentes/Manualidades';
 import MedicionTijeras from './Componentes/MedicionTijeras';  
 import Arte from './Componentes/Arte'; 
 import BorradorSacapuntas from './Componentes/BorradorSacapuntas'; 
+import LibretasCuadernos from './Componentes/LibretasCuadernos'; 
+import Kits from './Componentes/Kits'; 
 import Footer from './Componentes/Footer';
 import Login from './Componentes/Login';
 import Carrito from './Componentes/Carrito';
@@ -23,9 +25,9 @@ import ReturnPolicy from './Componentes/ReturnPolicy';
 import Terms from './Componentes/Terms';
 import PoliticaPrivacidad from './Componentes/PoliticaPriv';
 import AdminDashboard from './Componentes/AdminDashboard';
-import Ofertas from './Componentes/Ofertas';
 import Navegacion2 from './Componentes/Navegacion2';
 import Navegacion from './Componentes/Navegacion';
+
 
 function App() {
   const [misProductos, setMisProductos] = React.useState([]);
@@ -52,6 +54,8 @@ function App() {
             <Route path="/MedicionTijeras" element={<MedicionTijeras agregarAlCarrito={agregarAlCarrito} />} />
             <Route path="/Arte" element={<Arte agregarAlCarrito={agregarAlCarrito} />} />
             <Route path="/BorradorSacapuntas" element={<BorradorSacapuntas agregarAlCarrito={agregarAlCarrito} />} />
+            <Route path="/LibretasCuadernos" element={<LibretasCuadernos agregarAlCarrito={agregarAlCarrito} />} />
+            <Route path="/Kits" element={<Kits agregarAlCarrito={agregarAlCarrito}/>} />
             <Route path="/carrito" element={<Carrito misProductos={misProductos} />} />
             <Route path="/About" element={<About />} /> 
             <Route path='/PreguntaF' element={<PreguntaF/>} />

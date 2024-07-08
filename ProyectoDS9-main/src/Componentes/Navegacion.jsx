@@ -15,7 +15,7 @@ const navBarData = [
         submenu: [ 
             { 
                 label: "Libretas y Cuadernos", 
-                url: "/", 
+                url: "/LibretasCuadernos", 
             },   
             { 
                 label: "Lápiz y bolígrafos", 
@@ -67,7 +67,7 @@ const navBarData = [
     },
     {
         label: "Kits escolares",
-        url: "/",
+        url: "/Kits",
     }, 
 ]; 
 function Navegacion() { 
