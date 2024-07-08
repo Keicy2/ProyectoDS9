@@ -53,7 +53,7 @@ const navBarData = [
             },
             { 
               label: "Manualidades", 
-              url: "/", 
+              url: "/Manualidades", 
             },
         ], 
     }, 

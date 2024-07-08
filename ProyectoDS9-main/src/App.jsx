@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './Componentes/Header';
 import Productos from './Componentes/Productos';
+import Manualidades from './Componentes/Manualidades';
 import Footer from './Componentes/Footer';
 import Login from './Componentes/Login';
 import Carrito from './Componentes/Carrito';
@@ -42,6 +43,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
             <Route path="/productos" element={<Productos agregarAlCarrito={agregarAlCarrito} />} />
+            <Route path="/Manualidades" element={<Manualidades agregarAlCarrito={agregarAlCarrito} />} />
             <Route path="/carrito" element={<Carrito misProductos={misProductos} />} />
             <Route path="/About" element={<About />} /> 
             <Route path='/PreguntaF' element={<PreguntaF/>} />
