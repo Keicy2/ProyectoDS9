@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './Componentes/Header';
-import Navegacion from './Componentes/Navegacion';
 import Productos from './Componentes/Productos';
 import Footer from './Componentes/Footer';
 import Login from './Componentes/Login';
@@ -36,14 +35,13 @@ function App() {
     <Router>
       <div>
         <Header />
-        <Navegacion />
         <main>
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route path="/" element={<Inicio agregarAlCarrito={agregarAlCarrito} />} />
             <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
-            <Route path="/catalogo" element={<Catalogo agregarAlCarrito={agregarAlCarrito} />} />
+            <Route path="/productos" element={<Productos agregarAlCarrito={agregarAlCarrito} />} />
             <Route path="/carrito" element={<Carrito misProductos={misProductos} />} />
             <Route path="/About" element={<About />} /> 
             <Route path='/PreguntaF' element={<PreguntaF/>} />
