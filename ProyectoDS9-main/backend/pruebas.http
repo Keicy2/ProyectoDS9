@@ -5,8 +5,8 @@ POST http://localhost:1234/auth/login
 Content-Type:application/json
 
 {
-  "email":"1",
-  "password":"1"
+  "email":"a",
+  "password":"a"
 }
 
 ###logout de usuario
@@ -20,15 +20,14 @@ PATCH http://localhost:1234/auth/update
 Content-Type:application/json
 
 {
-    "name":"1",
-    "email":"1",
-    "password":"1",
+    "name":"juan perez",
+    "email":"a",
     "address":{
-        "street":"marte",
-        "city":"swat",
-        "state":"NOSE",
-        "zip":"452",
-        "country":"NOSE"
+        "street":"a",
+        "city":"a",
+        "state":"a",
+        "zip":"a",
+        "country":"a"
       },
     "phone":"777-777-777"
 }
@@ -38,17 +37,17 @@ POST http://localhost:1234/auth/register
 Content-Type:application/json
 
 {
-    "name":"1",
-    "email":"1",
-    "password":"1",
+    "name":"jaime ramos",
+    "email":"jramosabr05@gmail.com",
+    "password":"123",
     "address":{
-        "street":"NOSE",
-        "city":"NOSE",
-        "state":"NOSE",
-        "zip":"452",
-        "country":"NOSE"
+        "street":"a",
+        "city":"a",
+        "state":"a",
+        "zip":"a",
+        "country":"a"
       },
-    "phone":"123-3421-123"
+    "phone":"6730-20381"
 }
 
 
@@ -58,23 +57,23 @@ Content-Type:application/json
 GET  http://localhost:1234/items/items
 
 ###obtener un item
-GET http://localhost:1234/items/item/668935a43fbadff4bb064410
+GET http://localhost:1234/items/item/668b96617e0749f1713fb99d
 
 ###crear un item
 POST http://localhost:1234/items/createItems
 Content-Type:application/json
 
 {
-  "name": "carro de juguete ",
-  "price": 2.00,
-  "description": "es un carro",
-  "category": "juguete",
+  "name": "a2",
+  "price": 105.00,
+  "description": "papel",
+  "category": "utiles",
   "stock": 5,
   "images":["imagen"]
 }
 
 ###borrar un item
-DELETE  http://localhost:1234/items/deleteItems/6687b22de578e1c67cae7323
+DELETE  http://localhost:1234/items/deleteItems/668b96617e0749f1713fb99d
 
 ###update un item
 PATCH http://localhost:1234/items/updateItems/6687b22de578e1c67cae7323

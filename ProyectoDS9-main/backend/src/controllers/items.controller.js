@@ -1,4 +1,6 @@
 import Item from "../models/item.model.js";
+import { validateItem, validatePartialItem } from "../schemas/items.schema.js";
+
 export class itemsController {
   static async getAllItems(req, res) {
     try {
@@ -21,7 +23,7 @@ export class itemsController {
 
   static async createItem(req, res) {
     try {
-      const { name, price, description, stock, images, category } = req.body;
+      const { name, price, description, stock, images, category } = req.body;//prueba;
       const newItem = new Item({
         name,
         price,

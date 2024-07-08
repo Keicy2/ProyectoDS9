@@ -9,7 +9,7 @@ import {
 export class payController {
   static async payCreate(req, res) {
     try {
-      // Definición de la orden
+
       const order = {
         intent: "CAPTURE",
         purchase_units: [
@@ -29,11 +29,9 @@ export class payController {
         },
       };
 
-      // Formatear el cuerpo para obtener el token de acceso
       const params = new URLSearchParams();
       params.append("grant_type", "client_credentials");
 
-      // Generar el token de acceso
       
       const {
         data: { access_token },
@@ -42,7 +40,7 @@ export class payController {
         params,
         {
           headers: {
-            "Content-Type": "application/x-www-form-urlencoded", // Asegúrate del tipo de contenido correcto
+            "Content-Type": "application/x-www-form-urlencoded", 
           },
           auth: {
             username: PAYPAL_API_CLIENT,
@@ -53,7 +51,6 @@ export class payController {
 
       console.log("Access Token:", access_token);
 
-      // Crear la orden
       const response = await axios.post(
         `${PAYPAL_API}/v2/checkout/orders`,
         order,
@@ -67,11 +64,11 @@ export class payController {
 
       console.log("Order Response:", response.data);
 
-      // Responder con la información de la orden
+
       return res.send(
         response.data.links.find((link) => link.rel === "approve")
       );
-      //res.json(response.data);
+
     } catch (error) {
       console.error(
         "Error:",
@@ -153,18 +150,14 @@ export class payController {
         }
       );
 
-      // Log de la respuesta para depuración
       console.log(response.data);
 
-      // Responde con un mensaje de éxito
       res.send("Pago completado");
-      // O redirige a otra página si lo prefieres
-      // res.redirect("/payed.html");
+
     } catch (error) {
-      // Log de errores detallado para depuración
+
       console.error(error.response ? error.response.data : error.message);
 
-      // Responde con un mensaje de error
       return res.status(500).json({ message: "Internal Server error" });
     }
   }

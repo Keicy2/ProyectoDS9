@@ -1,12 +1,14 @@
 import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 import { createToken } from "../libs/jwt.js";
+import { validateAuth, validatePartialAuth } from "../schemas/auth.schema.js";
 import { TOKEN_SECRET } from "../../config.js";
 
 export class userController {
   static async register(req, res) {
     try {
-      const { name, email, password, address, phone } = req.body;
+      const prueba = validateAuth(req.body);
+      const { name, email, password, address, phone } = prueba;
 
       const userFound = await User.findOne({ email });
 
@@ -105,13 +107,15 @@ export class userController {
   }
 
   static async updateUser(req, res) {
-    const profile = await User.findByIdAndUpdate(
-      req.user.id,
-      { $set: req.body },
-      {
-        new: true,
-        runValidators: true,
-      }
+    const profile = validatePartialAuth(
+      await User.findByIdAndUpdate(
+        req.user.id,
+        { $set: req.body },
+        {
+          new: true,
+          runValidators: true,
+        }
+      )
     );
     if (!profile) return res.status(400).json({ message: "error" });
     res.json(profile);
