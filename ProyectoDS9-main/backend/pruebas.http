@@ -20,9 +20,9 @@ PATCH http://localhost:1234/auth/update
 Content-Type:application/json
 
 {
-    "name":"3",
-    "email":"3",
-    "password":"3",
+    "name":"1",
+    "email":"1",
+    "password":"1",
     "address":{
         "street":"marte",
         "city":"swat",
@@ -38,9 +38,9 @@ POST http://localhost:1234/auth/register
 Content-Type:application/json
 
 {
-    "name":"344",
-    "email":"344",
-    "password":"344",
+    "name":"1",
+    "email":"1",
+    "password":"1",
     "address":{
         "street":"NOSE",
         "city":"NOSE",
@@ -58,18 +58,18 @@ Content-Type:application/json
 GET  http://localhost:1234/items/items
 
 ###obtener un item
-GET http://localhost:1234/items/item/6684e57d7d08d26847b4c927
+GET http://localhost:1234/items/item/668935a43fbadff4bb064410
 
 ###crear un item
 POST http://localhost:1234/items/createItems
 Content-Type:application/json
 
 {
-  "name": "aasw ",
+  "name": "carro de juguete ",
   "price": 2.00,
-  "description": "awasa",
-  "category": "vwasa",
-  "stock": 1,
+  "description": "es un carro",
+  "category": "juguete",
+  "stock": 5,
   "images":["imagen"]
 }
 
@@ -85,5 +85,24 @@ Content-Type:application/json
     "stock": 140
 }
 
+//cart pruebas
 
+### add cart
+POST http://localhost:1234/a/cart/addCart/668935a43fbadff4bb064410
+
+### odtener el cart
+GET http://localhost:1234/a/cart/getCart
+
+
+//payment pruebas
+
+###createpay
+POST http://localhost:1234/a/pay/createOrder
+
+###capturepay
+//hay que colocar el token
+GET  http://localhost:1234/a/pay/captureOrder
+
+###cancelpay
+GET http://localhost:1234/a/pay/canecelOrder
 
