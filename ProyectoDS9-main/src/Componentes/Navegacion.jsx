@@ -10,7 +10,8 @@ const navBarData = [
         url: "/", 
     }, 
     { 
-        label: "Productos", 
+        label: "Productos",
+        url: "/productos", 
         submenu: [ 
             { 
                 label: "Libretas y Cuadernos", 

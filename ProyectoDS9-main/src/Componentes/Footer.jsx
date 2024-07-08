@@ -4,6 +4,7 @@ import './css.css';
 import visaLogo from '/public/visa.png';
 import paypalLogo from '/public/paypal.png';
 
+
 function Footer() {
   return (
     <footer className="footer">

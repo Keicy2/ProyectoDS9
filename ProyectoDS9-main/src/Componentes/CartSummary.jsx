@@ -54,7 +54,7 @@ const CartSummary = ({ items }) => {
         <div ref={paypal}></div>
       </div>
       <input type="text" placeholder="Usar código de descuento" />
-      <a href="#" className="continue-shopping">Seguir navegando</a>
+      <a href="/productos" className="continue-shopping">Seguir navegando</a>
       
     </div>
   );
