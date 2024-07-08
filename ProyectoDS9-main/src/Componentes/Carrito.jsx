@@ -6,7 +6,8 @@ import './css.css';
 const Carrito = () => {
   const cartItems = [
     { id: 1, name: 'Bolígrafo Paper Mate Stylus', description: '2 EN 1, 2 PZS, 1.0MM', price: 5.25, image: '/Boligrafo.jpeg', quantity: 1 },
-    { id: 2, name: 'MARCADOR MAGISTRAL C/2 COLORES SURTIDOS', description: '2 EN 1, 2 PZS', price: 2.78, image: '/Marcador.jpeg', quantity: 3 }
+    { id: 2, name: 'MARCADOR MAGISTRAL C/2 COLORES SURTIDOS', description: '2 EN 1, 2 PZS', price: 2.78, image: '/Marcador.jpeg', quantity: 3 },
+    { id: 715, name: 'SACAPUNTA 2 PIEZAS', description: 'Marca SHARPENER', price: 2.99, image: 'utiles/Sacapuntas 2 piezas 2.99.png',quantity: 1 },
   ];
 
   return (

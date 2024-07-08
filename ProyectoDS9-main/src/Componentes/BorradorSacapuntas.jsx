@@ -2,7 +2,6 @@ import React, {useState, useContext} from 'react';
 import { useNavigate } from 'react-router-dom';
 import Pagination from './Pagination';
 import ProductList from './ProductList';
-import Filters from './Filters';
 import './css.css';
 import { cartcontex } from '../Contextos/cartcontext';
 import Navegacion from './Navegacion';
@@ -27,7 +26,7 @@ const BorradorSacapuntas = ({children}) => {
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 8;
+  const productsPerPage = 10;
 
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
@@ -40,8 +39,6 @@ const BorradorSacapuntas = ({children}) => {
       <Navegacion/>
      <h2 className="catalogo-title">Borradores y Sacapuntas</h2>
       <div className="catalogo-container">
-        
-      <div className='catalogo-filters'>
       </div>
       <div className='products-pagination-container'>
       <ProductList products={currentProducts} addToCart={addToCart}/>
@@ -52,7 +49,6 @@ const BorradorSacapuntas = ({children}) => {
         />
       </div>  
       </div>
-    </div>
   );
 };
 

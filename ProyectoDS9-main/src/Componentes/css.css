@@ -269,6 +269,13 @@
 
 
 /*Navegacion*/
+.nav-link{
+  color:#8BBEC8 !important;
+  font-size: 22px !important;
+  font-family: 'frauces' !important;
+  
+}
+
 .navbar { 
   padding-left: 37% !important;
   background-color: #0A3448;

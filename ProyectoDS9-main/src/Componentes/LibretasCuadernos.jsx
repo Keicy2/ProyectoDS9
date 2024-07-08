@@ -38,8 +38,6 @@ const LibretasCuadernos = ({children}) => {
       <Navegacion/>
      <h2 className="catalogo-title">Borradores y Sacapuntas</h2>
       <div className="catalogo-container">
-        
-      <div className='catalogo-filters'>
       </div>
       <div className='products-pagination-container'>
       <ProductList products={currentProducts} addToCart={addToCart}/>
@@ -50,7 +48,6 @@ const LibretasCuadernos = ({children}) => {
         />
       </div>  
       </div>
-    </div>
   );
 };
 

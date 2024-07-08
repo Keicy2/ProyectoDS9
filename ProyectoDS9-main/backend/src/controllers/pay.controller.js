@@ -16,7 +16,7 @@ export class payController {
           {
             amount: {
               currency_code: "USD",
-              value: "105.70",
+              value: "16.58",
             },
           },
         ],

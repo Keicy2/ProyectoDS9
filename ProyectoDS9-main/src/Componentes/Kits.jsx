@@ -35,8 +35,6 @@ const Kits = ({children}) => {
       <Navegacion/>
      <h2 className="catalogo-title">KITS escolares</h2>
       <div className="catalogo-container">
-        
-      <div className='catalogo-filters'>
       </div>
       <div className='products-pagination-container'>
       <ProductList products={currentProducts} addToCart={addToCart}/>
@@ -47,7 +45,6 @@ const Kits = ({children}) => {
         />
       </div>  
       </div>
-    </div>
   );
 };
 

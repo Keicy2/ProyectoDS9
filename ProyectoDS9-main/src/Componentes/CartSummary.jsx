@@ -15,10 +15,10 @@ const CartSummary = ({ items }) => {
             intent: "CAPTURE",
             purchase_units: [
               {
-                description: "Boligrafo y Marcador",
+                description: "Boligrafo, Marcador y Sacapuntas",
                 amount: {
                   currency_code: "USD",
-                  value: 13.59,
+                  value: 16.58,
                 },
               },
             ],

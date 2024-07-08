@@ -28,7 +28,7 @@ function Registro() {
       const response = await axios.post('http://localhost:5000/register', formData);
       console.log('Success:', response.data);
       setMessage('¡Registro exitoso!');
-      navigate('/login'); // Redirigir al inicio de sesión después del registro exitoso
+      navigate('/'); // Redirigir al inicio de sesión después del registro exitoso
     } catch (error) {
       console.error('Error en el registro:', error);
       if (error.response && error.response.data && error.response.data.message) {
@@ -58,6 +58,18 @@ function Registro() {
         <div>
           <label>Contraseña:</label>
           <input type="password" name="password" value={formData.password} onChange={handleChange} required />
+        </div>
+        <div className="checkbox-wrapper">
+          <label>
+            <input
+              type="checkbox"
+              name="acceptPrivacyPolicy"
+              checked={formData.acceptPrivacyPolicy}
+              onChange={handleChange}
+              required
+            />
+            Entiendo y acepto las <a href="/PoliticaPriv"> Politicas de privacidad</a>
+          </label>
         </div>
         <button type="submit">Registrarse</button>
       </form>
