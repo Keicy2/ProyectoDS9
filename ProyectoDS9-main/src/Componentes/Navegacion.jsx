@@ -23,7 +23,7 @@ const navBarData = [
             },
             {
                 label: "Borradores y Sacapuntas",
-                url: "/",
+                url: "/BorradorSacapuntas",
             },
             {
                 label: "Libros",

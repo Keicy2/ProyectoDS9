@@ -5,6 +5,7 @@ import Productos from './Componentes/Productos';
 import Manualidades from './Componentes/Manualidades';
 import MedicionTijeras from './Componentes/MedicionTijeras';  
 import Arte from './Componentes/Arte'; 
+import BorradorSacapuntas from './Componentes/BorradorSacapuntas'; 
 import Footer from './Componentes/Footer';
 import Login from './Componentes/Login';
 import Carrito from './Componentes/Carrito';
@@ -50,6 +51,7 @@ function App() {
             <Route path="/Manualidades" element={<Manualidades agregarAlCarrito={agregarAlCarrito} />} />
             <Route path="/MedicionTijeras" element={<MedicionTijeras agregarAlCarrito={agregarAlCarrito} />} />
             <Route path="/Arte" element={<Arte agregarAlCarrito={agregarAlCarrito} />} />
+            <Route path="/BorradorSacapuntas" element={<BorradorSacapuntas agregarAlCarrito={agregarAlCarrito} />} />
             <Route path="/carrito" element={<Carrito misProductos={misProductos} />} />
             <Route path="/About" element={<About />} /> 
             <Route path='/PreguntaF' element={<PreguntaF/>} />
